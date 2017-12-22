@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>Opdracht  Wiskunde tabel</p>
+<p>Maak met behulp van een of meer “for” en / of “while” loops een tabel op het scherm. In de linker kolom
+dienen de getallen 1 t/m 10 weergegeven te worden, in de tweede kolom dienen de kwadraten van de
+getallen uit de eerste kolom weergegeven te worden en in de derde kolom dienen de derde machten van de
+getallen uit de eerste kolom weergegeven te worden.</p>
+
+<script>
+    document.write("<TABLE BORDER = '5' WIDTH = '100px'>");
+    document.write("<TR><TH WIDTH = '200px'><B>x</b></TH>");
+    document.write("<TH><B>kwadraat</B></TH>");
+    document.write("<TH><B>3e macht</B></TH></TR>");
+
+for (var count = 1; count <=10; count++)
+{
+    document.write("<TR><TD>" + count + "</TD><TD>" + kwadraat(count) + "</TD><TD>" + derdemacht(count));
+    function kwadraat(x)
+    {
+        return x*x;
+    }
+    function derdemacht(x)
+    {
+        return x*x*x;
+    }
+}
+document.write("</TABLE>");
+
+</script>
+
+
+
+
+
+
+</body>
+</html>

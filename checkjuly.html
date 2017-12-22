@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<p>The task inthis exercise is to write my own function that accepts the current month as a parameter and prints one of the following
+responses, depending on whether it is July or not:</p>
+<p> if it is july, it will respond: "It's July, so it can get really hot."</p>
+<p> if it is another month, it will respond: "It's not July, so at least we're not in the peak of the heat."</p><br>
+
+<p>So, the response given by the code, is as follows:</P>
+
+
+
+<p id="demo"></p>
+<script>
+var months=new Date().getMonth();
+julymonth(months);     /*invoking/calling function*/
+function julymonth(d) {
+if (d ==6) {
+   document.getElementById("demo").innerHTML = "It's July, so it can get really hot.";
+}
+else {
+	document.getElementById("demo").innerHTML = "It’s not July, so at least we’re not in the peak of the heat.";
+}}
+</script>
+</body>
+</html>

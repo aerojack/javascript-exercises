@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+</html>
+<body>
+
+<h2>Woofmeow</h2>
+
+<h4>Instruction
+Write your own function that prints the numbers from 1 to 100 using a loop. For multiples of
+three print “Woof” and for multiples of five print “Meow”. For numbers which are multiples of
+both three and five print “WoofMeow”.</h4>
+
+<p>See the result below:
+
+<div id="result"></div>
+
+<script>
+function WoofMeow(){
+  for(var i=1;i<=100;i++){
+    if(i%5 == 0 && i%3 == 0){
+        print('WoofMeow');
+    } else if(i%3 == 0){
+        print('Woof');
+    } else if(i%5 == 0){
+        print('Meow');
+    } else {
+        print(i);
+    }
+  }
+}
+var r = document.getElementById('result');
+function print(s){
+  r.innerHTML += s + '<br>';
+}
+WoofMeow();
+</script>
+</body>
+</html>
