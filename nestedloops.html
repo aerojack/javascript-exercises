@@ -1,47 +1,50 @@
 <!DOCTYPE html>
 <html>
-  <head>
-      <meta charset="utf-8">
-      <meta name="viewport" content="width=device-width">
-      <title>nested loops</title>
-    <!--  <link href="loop.css" rel="stylesheet" type="text/css" />  -->
-  </head>
-  <body>
+<head>
+  <meta charset="utf-8">
+  <title>NestedLoops</title>
+</head>
+<body>
+  <h4>PHP / Javascript programming exercise
+  version 1.0
+  created on 04-01-2018</h4>
+  <h4>In the previous exercises we covered (for) loops. In this exercise we use nested loops (one
+  for loop inside another for loop). We use these nested loops to print data from a
+  2-dimensional array.</h4> <h4>To learn more about two dimensional arrays and nested loops please
+  watch the following videos before working on this exercise:</h4>
+  <h4>two dimensional arrays: https://www.youtube.com/watch?v=ApHNRy2NQgg<br>
+  nested loops: https://www.youtube.com/watch?v=r_8oqJeoiHU</h4>
+  <h4>Instruction:
+  Use nested for loops to print
+  Sample array:
+  var a = [[4, 2, 0],[8, 11, 9],[7, 0, 7],[7, 4, 28],[3, 10, 26]];</h4><h4>
+  Sample Output:
+  "row 0"
+  "4"
+  "2"
+  "0"
+  "row 1"
+  “8”
+  “11”
+  “9”
+  … etc.</h4><br><br>
 
-<h4>PHP / Javascript programming exercise
-version 1.0
-created on 04-01-2018</h4>
-<h4>In the previous exercises we covered (for) loops. In this exercise we use nested loops (one
-for loop inside another for loop). We use these nested loops to print data from a
-2-dimensional array.</h4> <h4>To learn more about two dimensional arrays and nested loops please
-watch the following videos before working on this exercise:</h4>
-<h4>two dimensional arrays: https://www.youtube.com/watch?v=ApHNRy2NQgg<br>
-nested loops: https://www.youtube.com/watch?v=r_8oqJeoiHU</h4>
-<h4>Instruction:
-Use nested for loops to print
-Sample array:
-var a = [[4, 2, 0],[8, 11, 9],[7, 0, 7],[7, 4, 28],[3, 10, 26]];</h4><h4>
-Sample Output:
-"row 0"
-"4"
-"2"
-"0"
-"row 1"
-“8”
-“11”
-“9”
-… etc.</h4><br><br>
+  <h4>Result:</h4>
 
-<h4>Result:</h4>
 
 <script>
-    var array = [[4, 2, 0],[8, 11, 9],[7, 0, 7],[7, 4, 28],[3, 10, 26]];
-    for (i=0; i<5; i++) {
-      document.write("<br>" + "row " + i + ":  ");
-    for (j=0; j<array[i].length; j++) {
-      document.write(" ' " + array[i][j] + " '  ")
-    }}
-
+var tab =[];
+tab = "<table border='1' width='300' cellspacing='0' cellpadding='3'><tr>";
+var array = [[4, 2, 0],[8, 11, 9],[7, 0, 7],[7, 4, 28],[3, 10, 26]];
+for (i=0; i<5; i++) {
+tab = tab + "<td>" + "row " + i + "</td>";
+for (j=0; j<array[i].length; j++){
+  tab = tab + "<td>" + array [i][j] + "</td>";
+}
+  tab = tab + "</tr>";
+  }
+  tab = tab + "</table>";
+  document.write (tab);
 </script>
 </body>
 </html>
